@@ -24,7 +24,7 @@
 // }
 
 import { NavLink } from "react-router-dom";
-import NavLinks from "../Data";
+import { NavLinks} from '../Data.js';
 import "../Style.css";
 
 export default function Navbar() {
