@@ -87,4 +87,21 @@ const testimonials = [
     role: "Marketing Director, RetailPlus",
   },
 ];
-export { NavLinks, cardsData, processSteps, testimonials };
+
+const team = [
+  {  name: "Adesanya Adebowale", role: "Managing Partner", image: "/Images/Mate.gif", email: 'aa@gmail.com' },
+  {  name: "Babatunde Ogunariwo", role: "Project Manager / Visual Designer", image: "/Images/Mate.gif", email: 'bo@gmail.com' },
+  {  name: "Adedayo Peters", role: "HR / Legal Adviser", image: "/Images/Mate.gif", email: 'ap@gmail.com' },
+  {  name: "Jide Thomas", role: "Senior Fullstack Developer", image: "/Images/Mate.gif", email: 'jt@gmail.com' },
+];
+
+const values = [
+  { title: "Innovation", text: "Boldly challenging the status quo" },
+  { title: "Excellence", text: "Exceptional quality that endures" },
+  { title: "Integrity", text: "Honest, transparent operations" },
+  { title: "Human-Centric", text: "Technology that truly serves" },
+  { title: "Global Vision", text: "Scalable, future-ready solutions" },
+  { title: "Impact", text: "Positive transformation focus" },
+];
+
+export { NavLinks, cardsData, processSteps, testimonials, team, values };
