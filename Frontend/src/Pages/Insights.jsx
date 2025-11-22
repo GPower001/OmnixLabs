@@ -1,11 +1,158 @@
-import React from 'react'
+// import React from 'react'
+// import { insights } from "../InsightData";
+// import { LineChart, Palette, Rocket } from "lucide-react";
 
-function Insights() {
+// const iconMap = {
+//   LineChart: <LineChart className="w-10 h-10 text-blue-500" />,
+//   Palette: <Palette className="w-10 h-10 text-pink-500" />,
+//   Rocket: <Rocket className="w-10 h-10 text-purple-500" />,
+// };
+
+// export default function Insights () {
+//   return (
+//     <section className="min-h-screen bg-gray-50 py-20 px-6">
+//       <div className="max-w-6xl mx-auto text-center">
+//         {/* ===== Header Section ===== */}
+//               <motion.section
+//                 className="bg-base-100 text-center py-24"
+//                 initial="hidden"
+//                 whileInView="visible"
+//                 viewport={{ once: true }}
+//                 variants={fadeIn}
+//               >
+//                 <div className="container mx-auto px-6">
+//                   <motion.h1
+//                     className="text-5xl font-bold mb-4 text-gray-900"
+//                     variants={fadeInUp}
+//                   >
+//                     <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+//                       Insights
+//                     </span>
+//                   </motion.h1>
+//                 </div>
+//               </motion.section>
+
+//         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+//           {insights.map((item, index) => (
+//             <div
+//               key={index}
+//               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8 flex flex-col items-center text-center border border-gray-100"
+//             >
+//               <div className="mb-6">{item.icon}</div>
+
+//               <h3 className="text-lg font-semibold text-gray-800 mb-2">
+//                 {item.title}
+//               </h3>
+//               <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+
+//               <p className="text-gray-600 text-sm leading-relaxed mb-6">
+//                 {item.description}
+//               </p>
+
+//               <a
+//                 href={item.link}
+//                 className="text-blue-600 font-medium hover:underline"
+//               >
+//                 Read More →
+//               </a>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+import React from "react";
+import { motion } from "framer-motion";
+import { insights } from "../InsightData";
+import { LineChart, Palette, Rocket } from "lucide-react";
+
+// Icon Mapping
+const iconMap = {
+  LineChart: <LineChart className="w-10 h-10 text-blue-500" />,
+  Palette: <Palette className="w-10 h-10 text-pink-500" />,
+  Rocket: <Rocket className="w-10 h-10 text-purple-500" />,
+};
+
+// Animation Variants
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.8 } },
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
+const cardVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: i * 0.2 },
+  }),
+};
+
+export default function Insights() {
   return (
-    <div>
-      Insights Page
-    </div>
-  )
-}
+    <section className="page overflow-hidden p-5">
+      <motion.div
+        className="max-w-6xl mx-auto text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
+        {/* ===== Header Section ===== */}
+        <motion.section
+          className="bg-base-100 text-center py-24"
+          variants={fadeIn}
+        >
+          <motion.h1
+            className="text-5xl font-bold mb-4 text-gray-900"
+            variants={fadeInUp}
+          >
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              Insights
+            </span>
+          </motion.h1>
+        </motion.section>
 
-export default Insights
+        {/* ===== Cards Section ===== */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+          {insights.map((item, index) => (
+            <motion.div
+              key={index}
+              custom={index}
+              variants={cardVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8 flex flex-col items-center text-center border border-gray-100"
+            >
+              <div className="mb-6">{item.icon}</div>
+
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-500 mb-4">{item.date}</p>
+
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                {item.description}
+              </p>
+
+              <a
+                href={item.link}
+                className="text-blue-600 font-medium hover:underline"
+              >
+                Read More →
+              </a>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+}

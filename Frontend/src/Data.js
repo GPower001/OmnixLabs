@@ -1,8 +1,8 @@
+
 const NavLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Industries", path: "/industries" }, // Fixed typo: "Idustries"
   { name: "Case Studies", path: "/case-studies" },
   { name: "Insights", path: "/insights" }, // Fixed: lowercase path for consistency
   { name: "Contact", path: "/contact" },
@@ -104,4 +104,54 @@ const values = [
   { title: "Impact", text: "Positive transformation focus" },
 ];
 
-export { NavLinks, cardsData, processSteps, testimonials, team, values };
+const caseStudies = [
+  {
+    title: "AAP Chambers",
+    service: "Web Development & Design",
+    description:
+      "Professional legal services website featuring modern design, seamless user experience, and comprehensive service presentation. Built with responsive design and optimized for client acquisition.",
+    technologies: "HTML5, CSS3, JavaScript, Responsive Design",
+  },
+  {
+    title: "Plus Digital Studio",
+    service: "Brand Identity & Portfolio Design",
+    description:
+      "Creative portfolio showcasing innovative design solutions, visual storytelling capabilities, and comprehensive creative services for digital transformation.",
+    focus: "Visual Identity, Creative Direction, Portfolio Presentation",
+    linkText: "View Creative Work →",
+  },
+  {
+    title: "Glory Wellness",
+    service: "Digital Marketing & Social Media",
+    description:
+      "Comprehensive health and wellness brand strategy featuring engaging social media management, content creation, and digital marketing campaigns that drive wellness community growth.",
+    results: "Increased Engagement, Brand Recognition, Community Building",
+  },
+  {
+      title: "Enterprise Solutions",
+      service: "Custom Software Development",
+      description:
+        "Scalable enterprise applications and business automation solutions that streamline operations and enhance productivity for growing businesses.",
+      expertise: "Custom Development, System Integration, Business Automation",
+      linkText: "Discuss Your Project →",
+    },
+    {
+      title: "E-commerce Platforms",
+      service: "Full-Stack E-commerce Development",
+      description:
+        "Complete online retail solutions with payment integration, inventory management, and customer analytics to drive sales and growth.",
+      features: "Payment Integration, Analytics, Mobile Commerce",
+      linkText: "Start Your Store →",
+    },
+    {
+      title: "Brand Transformations",
+      service: "Complete Brand & Digital Makeover",
+      description:
+        "End-to-end brand transformations including visual identity, website development, and digital marketing strategies for market repositioning.",
+      impact: "Brand Recognition, Market Position, Digital Presence",
+      linkText: "Transform Your Brand →",
+    },
+];
+
+
+export { NavLinks, cardsData, processSteps, testimonials, team, values, caseStudies };

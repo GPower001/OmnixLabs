@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import { team } from "../Data.js";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -19,38 +18,30 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="py-16 bg-white relative overflow-visible">
-      <div className="max-w-7xl mx-auto px-4 overflow-visible">
+    <section className="py-16 bg-white relative">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
           Meet Our Team
         </h2>
 
-        <div className="relative overflow-visible">
-          {/* Left Scroll Button */}
-          <button
-            onClick={() => scroll("left")}
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md border border-gray-200 rounded-full w-10 h-10 items-center justify-center hover:bg-gray-100 transition z-10"
-          >
-            <ChevronLeft className="w-5 h-5 text-gray-700" />
-          </button>
+        <div className="relative">
 
           {/* Scrollable Container */}
           <div
             ref={scrollContainer}
-            className="flex items-stretch overflow-x-auto gap-8 snap-x snap-mandatory scroll-smooth px-2 hide-scrollbar overflow-visible"
+            className="flex items-stretch overflow-x-auto gap-8 snap-x snap-mandatory scroll-smooth px-2 hide-scrollbar"
           >
             {team.map((member, idx) => (
               <div
                 key={idx}
-                className="min-w-[250px] flex-shrink-0 text-center snap-center flex flex-col items-center justify-between p-6 mt-20 overflow-visible"
+                className="min-w-[250px] flex-shrink-0 text-center snap-center flex flex-col items-center justify-between p-6 mt-20"
               >
-                {/* 👇 Blob + Image */}
-                <div className="relative flex justify-center mb-10 overflow-visible">
-                  {/* Blob Background (🔹 slightly wider) */}
+                {/* Blob + Image */}
+                <div className="relative flex justify-center mb-10">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 500 500"
-                    className="absolute bottom-0 w-72 h-64 text-purple-500" // 🔹 increased from w-64 h-64 → w-72 h-72
+                    className="absolute bottom-0 w-72 h-64 text-purple-500"
                   >
                     <path
                       fill="currentColor"
@@ -58,8 +49,7 @@ const TeamSection = () => {
                     />
                   </svg>
 
-                  {/* Image (FULL SIZE, POPS OUT) */}
-                  <div className="relative w-56 overflow-visible">
+                  <div className="relative w-56">
                     <img
                       src={member.image || `https://i.pravatar.cc/300?img=${idx + 5}`}
                       alt={member.name}
@@ -86,13 +76,38 @@ const TeamSection = () => {
             ))}
           </div>
 
-          {/* Right Scroll Button */}
+          {/* DESKTOP Arrows (left/right positioned) */}
+          <button
+            onClick={() => scroll("left")}
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md border border-gray-200 rounded-full w-10 h-10 items-center justify-center hover:bg-gray-100 transition z-10"
+          >
+            <ChevronLeft className="w-5 h-5 text-gray-700" />
+          </button>
+
           <button
             onClick={() => scroll("right")}
             className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md border border-gray-200 rounded-full w-10 h-10 items-center justify-center hover:bg-gray-100 transition z-10"
           >
             <ChevronRight className="w-5 h-5 text-gray-700" />
           </button>
+
+          {/* MOBILE Arrows (below carousel) */}
+          <div className="flex md:hidden justify-center gap-6 mt-6">
+            <button
+              onClick={() => scroll("left")}
+              className="bg-white shadow-md border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
+            >
+              <ChevronLeft className="w-5 h-5 text-gray-700" />
+            </button>
+
+            <button
+              onClick={() => scroll("right")}
+              className="bg-white shadow-md border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition"
+            >
+              <ChevronRight className="w-5 h-5 text-gray-700" />
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
