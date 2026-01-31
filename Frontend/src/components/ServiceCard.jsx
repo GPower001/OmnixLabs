@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 const ServiceCard = ({
@@ -11,7 +9,7 @@ const ServiceCard = ({
   gradientTo = "to-purple-600",
 }) => {
   return (
-    <div className="group bg-base-100 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+    <div className="group bg-base-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
       
       {/* ===== ICON + HEADER ===== */}
       <div className="flex items-center space-x-5 mb-6">
@@ -23,24 +21,24 @@ const ServiceCard = ({
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-base-content dark:text-black leading-snug">
+          <h3 className="text-2xl font-bold text-base-content leading-snug">
             {title}
           </h3>
-          <p className="text-base-content dark:text-black mt-1 text-[15px] leading-relaxed">
+          <p className="text-base-content mt-1 text-[15px] leading-relaxed">
             {description}
           </p>
         </div>
       </div>
 
       {/* ===== FEATURES LIST ===== */}
-      <ul className="space-y-3 mb-8 text-base-content dark:text-black">
+      <ul className="space-y-3 mb-8 text-base-content">
         {features.map((item, idx) => (
           <li
             key={idx}
             className="flex items-center gap-3 text-[15px] transition-colors duration-300"
           >
             <svg
-              className="h-5 w-5 text-indigo-500 dark:text-purple-400 flex-shrink-0"
+              className="h-5 w-5 text-indigo-50 flex-shrink-0"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"

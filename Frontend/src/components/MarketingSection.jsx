@@ -4,13 +4,13 @@ import { Code2, Smartphone, Server } from "lucide-react"; // ✅ Added Server ic
 
 const MarketingSection = () => {
   return (
-    <section className="bg-base-200 text-black py-20 px-6 relative overflow-hidden">
+    <section className="bg-base-100 text-black py-20 px-6 relative overflow-hidden">
       {/* Header */}
       <div className="relative text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
+        <h2 className=" text-base-content text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
           Marketing & Strategy
         </h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-base-content text-lg">
           Data-driven growth and digital marketing
         </p>
       </div>

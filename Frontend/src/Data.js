@@ -37,7 +37,7 @@ const cardsData = [
   {
     title: "True Partnership",
     description: "We believe in shared success with clients, partners, and communities, working as your dedicated allies in achieving unparalleled growth.",
-    icon: "🤝" // Added variation selector for proper emoji rendering
+    icon: "🤝" 
   }
 ];
 
