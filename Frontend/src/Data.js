@@ -1,4 +1,3 @@
-
 const NavLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -89,10 +88,9 @@ const testimonials = [
 ];
 
 const team = [
-  {  name: "Adesanya Adebowale", role: "Managing Partner", image: "/Images/Mate.gif", email: 'aa@gmail.com' },
-  {  name: "Babatunde Ogunariwo", role: "Project Manager / Visual Designer", image: "/Images/Mate.gif", email: 'bo@gmail.com' },
-  {  name: "Adedayo Peters", role: "HR / Legal Adviser", image: "/Images/Mate.gif", email: 'ap@gmail.com' },
-  {  name: "Jide Thomas", role: "Senior Fullstack Developer", image: "/Images/Mate.gif", email: 'jt@gmail.com' },
+  {  name: "Adesanya Adebowale", role: "Managing Partner", image: "/Images/AdebowalePics.png", linkedin: "https://www.linkedin.com/in/adebowale-adesanya-958a951ab/" },
+  {  name: "Adedayo Peters", role: "HR / Legal Adviser", image: "/Images/Adedayo Peters.png", linkedin: "https://www.linkedin.com/in/adedayo-peters-571410a7/" },
+  {  name: "Jide Thomas", role: "Senior Fullstack Developer", image: "/Images/Mate.gif", linkedin: "#" },
 ];
 
 const values = [
@@ -128,10 +126,10 @@ const caseStudies = [
     results: "Increased Engagement, Brand Recognition, Community Building",
   },
   {
-      title: "Enterprise Solutions",
-      service: "Custom Software Development",
+      title: "Glory wellness",
+      service: "Inventory Management System software",
       description:
-        "Scalable enterprise applications and business automation solutions that streamline operations and enhance productivity for growing businesses.",
+        "Customized Software solution that helps businesses track, manage, and optimize their stock in real time covering products, quantities, movements, and availability so they can reduce losses, avoid stock-outs, and make smarter purchasing and sales decisions.",
       expertise: "Custom Development, System Integration, Business Automation",
       linkText: "Discuss Your Project →",
     },

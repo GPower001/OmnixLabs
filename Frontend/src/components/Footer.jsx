@@ -1,16 +1,108 @@
+// import { FaInstagram, FaLinkedinIn, FaTiktok, FaFacebookF } from "react-icons/fa";
+
+// export default function Footer() {
+//   return (
+//     <footer className="bg-white border-t border-gray-200 px-6 md:px-16 py-10">
+//       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+//         {/* Omnix Labs */}
+//         <div>
+//           <h2 className="font-bold text-lg mb-3">Omnix Labs</h2>
+//           <p className="text-sm text-gray-600">
+//             Building Global Futures Through Human Connection
+//           </p>
+//           <p className="text-sm text-gray-600 mt-2">
+//             Technology & Media Innovation Company based in Lagos, Nigeria,
+//             serving clients worldwide.
+//           </p>
+//         </div>
+
+//         {/* Services */}
+//         <div>
+//           <h2 className="font-bold text-lg mb-3">Services</h2>
+//           <ul className="space-y-2 text-sm text-gray-600">
+//             <li>Software Development</li>
+//             <li>UI/UX Design</li>
+//             <li>Web Development</li>
+//             <li>Brand Identity</li>
+//             <li>Digital Marketing</li>
+//             <li>Data Intelligence</li>
+//           </ul>
+//         </div>
+
+//         {/* Company */}
+//         <div>
+//           <h2 className="font-bold text-lg mb-3">Company</h2>
+//           <ul className="space-y-2 text-sm text-gray-600">
+//             <li>About Us</li>
+//             <li>Case Studies</li>
+//             <li>Insights</li>
+//             <li>Contact</li>
+//             <li>Careers</li>
+//           </ul>
+//         </div>
+
+//         {/* Connect */}
+//         <div>
+//           <h2 className="font-bold text-lg mb-3">Connect</h2>
+//           <div className="flex space-x-3 mb-5">
+//             {[
+//               { icon: <FaInstagram />, color: "from-pink-500 to-orange-500", link: "https://www.instagram.com" },
+//               { icon: <FaLinkedinIn />, color: "from-blue-600 to-blue-400", link: "https://www.linkedin.com/company/omnix-labs/?viewAsMember=true" },
+//               { icon: <FaTiktok />, color: "from-gray-800 to-pink-500", link: "https://www.tiktok.com" },
+//               { icon: <FaFacebookF />, color: "from-blue-700 to-blue-500", link: "https://www.facebook.com/share/1Aa5w3q7ux/" },
+//             ].map((item, i) => (
+//               <a
+//                 key={i}
+//                 href={item.link}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className={`
+//                   w-12 h-12 flex items-center justify-center rounded-md border 
+//                   border-gray-300 text-lg cursor-pointer relative overflow-hidden
+//                   text-gray-600 transition-all duration-500 transform
+//                   hover:scale-110 hover:rotate-6
+//                   before:absolute before:inset-0 before:bg-gradient-to-r ${item.color}
+//                   before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
+//                 `}
+//               >
+//                 <span className="relative z-10 transition-colors duration-500 hover:text-white">
+//                   {item.icon}
+//                 </span>
+//               </a>
+//             ))}
+//           </div>
+//           <button className="relative overflow-hidden px-6 py-3 rounded-full shadow-md font-semibold bg-transparent border border-[#0d8ab8] group">
+//             <span className="relative z-10 text-gray-600 transition-colors duration-500 group-hover:text-white">
+//               Get Started Today
+//             </span>
+//             {/* Hover fill effect */}
+//             <span className="absolute inset-0 bg-[#0d8ab8] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+//           </button>
+//         </div>
+//       </div>
+
+//       <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500">
+//         © 2024 Omnix Labs. All rights reserved. | Building digital powerhouses
+//         that connect, inspire, and transform.
+//       </div>
+//     </footer>
+//   );
+// }
+
+
 import { FaInstagram, FaLinkedinIn, FaTiktok, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 px-6 md:px-16 py-10">
+    <footer className="bg-base-100 border-t border-base-300 px-6 md:px-16 py-10">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Omnix Labs */}
         <div>
-          <h2 className="font-bold text-lg mb-3">Omnix Labs</h2>
-          <p className="text-sm text-gray-600">
+          <h2 className="font-bold text-lg mb-3 text-base-content">Omnix Labs</h2>
+          <p className="text-sm text-base-content/70">
             Building Global Futures Through Human Connection
           </p>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-base-content/70 mt-2">
             Technology & Media Innovation Company based in Lagos, Nigeria,
             serving clients worldwide.
           </p>
@@ -18,8 +110,8 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h2 className="font-bold text-lg mb-3">Services</h2>
-          <ul className="space-y-2 text-sm text-gray-600">
+          <h2 className="font-bold text-lg mb-3 text-base-content">Services</h2>
+          <ul className="space-y-2 text-sm text-base-content/70">
             <li>Software Development</li>
             <li>UI/UX Design</li>
             <li>Web Development</li>
@@ -31,8 +123,8 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h2 className="font-bold text-lg mb-3">Company</h2>
-          <ul className="space-y-2 text-sm text-gray-600">
+          <h2 className="font-bold text-lg mb-3 text-base-content">Company</h2>
+          <ul className="space-y-2 text-sm text-base-content/70">
             <li>About Us</li>
             <li>Case Studies</li>
             <li>Insights</li>
@@ -43,44 +135,45 @@ export default function Footer() {
 
         {/* Connect */}
         <div>
-          <h2 className="font-bold text-lg mb-3">Connect</h2>
+          <h2 className="font-bold text-lg mb-3 text-base-content">Connect</h2>
           <div className="flex space-x-3 mb-5">
             {[
-              { icon: <FaInstagram />, color: "from-pink-500 to-orange-500" },
-              { icon: <FaLinkedinIn />, color: "from-blue-600 to-blue-400" },
-              { icon: <FaTiktok />, color: "from-gray-800 to-pink-500" },
-              { icon: <FaFacebookF />, color: "from-blue-700 to-blue-500" },
+              { icon: <FaInstagram />, color: "from-pink-500 to-orange-500", link: "https://www.instagram.com" },
+              { icon: <FaLinkedinIn />, color: "from-blue-600 to-blue-400", link: "https://www.linkedin.com/company/omnix-labs/?viewAsMember=true" },
+              { icon: <FaTiktok />, color: "from-gray-800 to-pink-500", link: "https://www.tiktok.com" },
+              { icon: <FaFacebookF />, color: "from-blue-700 to-blue-500", link: "https://www.facebook.com/share/1Aa5w3q7ux/" },
             ].map((item, i) => (
-              <div
+              <a
                 key={i}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`
                   w-12 h-12 flex items-center justify-center rounded-md border 
-                  border-gray-300 text-lg cursor-pointer relative overflow-hidden
-                  text-gray-600 transition-all duration-500 transform
+                  border-base-300 text-lg cursor-pointer relative overflow-hidden
+                  text-base-content/70 transition-all duration-500 transform
                   hover:scale-110 hover:rotate-6
                   before:absolute before:inset-0 before:bg-gradient-to-r ${item.color}
                   before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500
                 `}
               >
-                <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
+                <span className="relative z-10 transition-colors duration-500 hover:text-white">
                   {item.icon}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
           <button className="relative overflow-hidden px-6 py-3 rounded-full shadow-md font-semibold bg-transparent border border-[#0d8ab8] group">
-            <span className="relative z-10 text-gray-600 transition-colors duration-500 group-hover:text-white">
+            <span className="relative z-10 text-base-content/70 transition-colors duration-500 group-hover:text-white">
               Get Started Today
             </span>
             {/* Hover fill effect */}
             <span className="absolute inset-0 bg-[#0d8ab8] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
           </button>
-
-
         </div>
       </div>
 
-      <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500">
+      <div className="mt-10 border-t border-base-300 pt-6 text-center text-sm text-base-content/60">
         © 2024 Omnix Labs. All rights reserved. | Building digital powerhouses
         that connect, inspire, and transform.
       </div>
