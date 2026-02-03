@@ -58,7 +58,7 @@ const TeamSection = () => {
                     <img
                       src={member.image || `https://i.pravatar.cc/300?img=${idx + 5}`}
                       alt={member.name}
-                      className="relative w-full h-auto object-contain rounded-full -mt-24 z-10 pop-out-image"
+                      className={`relative w-full h-auto object-contain rounded-full -mt-24 z-10 pop-out-image ${idx === 0 ? 'mb-5' : '-mt-24'}`}
                     />
                   </div>
                 </div>

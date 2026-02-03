@@ -22,6 +22,8 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import WhatsAppButton from "../components/WhatsAppButton";
+import { whatsappConfig } from "../config/whatsappConfig";
 
 export default function Layout() {
   return (
@@ -34,6 +36,10 @@ export default function Layout() {
       </main>
 
       <Footer />
+      
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton {...whatsappConfig} />
+    
     </div>
   );
 }

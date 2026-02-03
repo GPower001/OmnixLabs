@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { motion } from "framer-motion";
 import { cardsData } from "../Data.js";
@@ -31,7 +33,7 @@ const WhyChoose = () => {
         </h2>
       </motion.div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-center">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 justify-items-center max-w-7xl mx-auto">
         {cardsData.map((card, index) => (
           <motion.div
             key={index}
@@ -41,20 +43,20 @@ const WhyChoose = () => {
             whileInView="visible"
             viewport={{ once: true }}
             whileHover="hover"
-            className="group w-full sm:w-80 min-h-[320px] bg-base-200 p-6 sm:p-8 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer mx-auto"
+            className="group w-full sm:w-80 lg:w-[420px] min-h-[320px] lg:min-h-[400px] bg-base-200 p-6 sm:p-8 lg:p-12 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer"
           >
             <motion.div
               variants={{
                 hover: { rotate: [0, -10, 10, 0], scale: 1.2 },
               }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="text-4xl sm:text-5xl mb-4 sm:mb-6 text-blue-600"
+              className="text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6 lg:mb-8 text-blue-600"
             >
               {card.icon}
             </motion.div>
 
-            <h3 className="text-lg sm:text-xl font-bold mb-2">{card.title}</h3>
-            <p className="text-base-content text-sm sm:text-base leading-relaxed">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 lg:mb-3">{card.title}</h3>
+            <p className="text-base-content text-sm sm:text-base lg:text-lg leading-relaxed">
               {card.description}
             </p>
           </motion.div>

@@ -1,6 +1,7 @@
 import { FaInstagram, FaLinkedinIn, FaTiktok, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-base-100 border-t border-base-300 px-6 md:px-16 py-10">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -28,16 +29,16 @@ export default function Footer() {
             <li>Data Intelligence</li>
           </ul>
         </div>
-
+       
         {/* Company */}
         <div>
           <h2 className="font-bold text-lg mb-3 text-base-content">Company</h2>
           <ul className="space-y-2 text-sm text-base-content/70">
-            <li>About Us</li>
-            <li>Case Studies</li>
-            <li>Insights</li>
-            <li>Contact</li>
-            <li>Careers</li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
           </ul>
         </div>
 
@@ -84,7 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 border-t border-base-300 pt-6 text-center text-sm text-base-content/60">
-        © 2024 Omnix Labs. All rights reserved. | Building digital powerhouses
+        © {currentYear} Omnix Labs. All rights reserved. | Building digital powerhouses
         that connect, inspire, and transform.
       </div>
     </footer>
