@@ -6,7 +6,7 @@
 //       {/* HEADING SECTION */}
 //       <div className="text-center mb-16">
 //         <h1 className="text-4xl font-bold text-base-content">
-//           Let's Build Something <span className="text-indigo-600 dark:text-indigo-400">Amazing Together</span>
+//           Let's Build Something <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">Amazing Together</span>
 //         </h1>
 //         <p className="text-base-content/70 mt-4 max-w-2xl mx-auto">
 //           Ready to transform your ideas into reality? Get in touch with our team and let's discuss
@@ -26,7 +26,7 @@
 //                 <input
 //                   type="text"
 //                   placeholder="John"
-//                   className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                   className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition"
 //                 />
 //               </div>
 
@@ -35,7 +35,7 @@
 //                 <input
 //                   type="text"
 //                   placeholder="Doe"
-//                   className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                   className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition"
 //                 />
 //               </div>
 //             </div>
@@ -46,7 +46,7 @@
 //               <input
 //                 type="email"
 //                 placeholder="john@example.com"
-//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition"
 //               />
 //             </div>
 
@@ -56,7 +56,7 @@
 //               <input
 //                 type="text"
 //                 placeholder="Your Company"
-//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition"
 //               />
 //             </div>
 
@@ -64,7 +64,7 @@
 //             <div>
 //               <label className="block text-sm font-medium mb-1 text-base-content">Project Type</label>
 //               <select
-//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content focus:ring-2 focus:ring-blue-700 outline-none transition"
 //               >
 //                 <option>Select Project Type</option>
 //                 <option>Web Development</option>
@@ -86,14 +86,14 @@
 //               <textarea
 //                 rows="4"
 //                 placeholder="Tell us about your project..."
-//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 resize-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition"
+//                 className="w-full border border-base-300 rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 resize-none focus:ring-2 focus:ring-blue-700 outline-none transition"
 //               ></textarea>
 //             </div>
 
 //             {/* Submit */}
 //             <button
 //               type="submit"
-//               className="w-full bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white py-3 rounded-md font-medium transition-colors duration-200"
+//               className="w-full bg-gradient-to-r from-blue-700 to-cyan-400 hover:opacity-90 text-white py-3 rounded-md font-medium transition-colors duration-200"
 //             >
 //               Send Message
 //             </button>
@@ -110,7 +110,7 @@
 //           <div className="space-y-6">
 //             {/* Email */}
 //             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-//               <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">✉️</div>
+//               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-700/10 to-cyan-400/10 flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">✉️</div>
 //               <div>
 //                 <h4 className="font-semibold text-base-content">Email Us</h4>
 //                 <p className="text-base-content/70 text-sm">info@theomnixlabs.com</p>
@@ -119,7 +119,7 @@
 
 //             {/* Call */}
 //             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-//               <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">📞</div>
+//               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-700/10 to-cyan-400/10 flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">📞</div>
 //               <div>
 //                 <h4 className="font-semibold text-base-content">Call Us</h4>
 //                 <p className="text-base-content/70 text-sm"> (+234)8062690220</p>
@@ -128,7 +128,7 @@
 
 //             {/* Visit */}
 //             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-//               <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">📍</div>
+//               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-700/10 to-cyan-400/10 flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">📍</div>
 //               <div>
 //                 <h4 className="font-semibold text-base-content">Visit Us</h4>
 //                 <p className="text-base-content/70 text-sm">Bamisoro Raheem T-junction, Epe Lagos State Nigeria</p>
@@ -137,7 +137,7 @@
 
 //             {/* Business Hours */}
 //             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-//               <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">⏰</div>
+//               <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-700/10 to-cyan-400/10 flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">⏰</div>
 //               <div>
 //                 <h4 className="font-semibold text-base-content">Business Hours</h4>
 //                 <p className="text-base-content/70 text-sm">Mon–Fri: 9AM–6PM PST</p>
@@ -280,7 +280,7 @@ export default function ContactSection() {
       {/* HEADING SECTION */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-base-content">
-          Let's Build Something <span className="text-indigo-600 dark:text-indigo-400">Amazing Together</span>
+          Let's Build Something <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">Amazing Together</span>
         </h1>
         <p className="text-base-content/70 mt-4 max-w-2xl mx-auto">
           Ready to transform your ideas into reality? Get in touch with our team and let's discuss
@@ -317,7 +317,7 @@ export default function ContactSection() {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="John"
-                  className={`w-full border ${errors.firstName ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                  className={`w-full border ${errors.firstName ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition`}
                 />
                 {errors.firstName && (
                   <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
@@ -334,7 +334,7 @@ export default function ContactSection() {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Doe"
-                  className={`w-full border ${errors.lastName ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                  className={`w-full border ${errors.lastName ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition`}
                 />
                 {errors.lastName && (
                   <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
@@ -353,7 +353,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="john@example.com"
-                className={`w-full border ${errors.email ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                className={`w-full border ${errors.email ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition`}
               />
               {errors.email && (
                 <p className="text-red-500 text-xs mt-1">{errors.email}</p>
@@ -371,7 +371,7 @@ export default function ContactSection() {
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="Your Company"
-                className={`w-full border ${errors.company ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                className={`w-full border ${errors.company ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 focus:ring-2 focus:ring-blue-700 outline-none transition`}
               />
               {errors.company && (
                 <p className="text-red-500 text-xs mt-1">{errors.company}</p>
@@ -387,7 +387,7 @@ export default function ContactSection() {
                 name="projectType"
                 value={formData.projectType}
                 onChange={handleChange}
-                className={`w-full border ${errors.projectType ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                className={`w-full border ${errors.projectType ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content focus:ring-2 focus:ring-blue-700 outline-none transition`}
               >
                 <option>Select Project Type</option>
                 <option>Web Development</option>
@@ -417,7 +417,7 @@ export default function ContactSection() {
                 onChange={handleChange}
                 rows="4"
                 placeholder="Tell us about your project..."
-                className={`w-full border ${errors.message ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 resize-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 outline-none transition`}
+                className={`w-full border ${errors.message ? 'border-red-500' : 'border-base-300'} rounded-md px-4 py-3 bg-base-100 text-base-content placeholder:text-base-content/50 resize-none focus:ring-2 focus:ring-blue-700 outline-none transition`}
               ></textarea>
               {errors.message && (
                 <p className="text-red-500 text-xs mt-1">{errors.message}</p>
@@ -428,7 +428,7 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white py-3 rounded-md font-medium transition-colors duration-200 ${
+              className={`w-full bg-gradient-to-r from-blue-700 to-cyan-400 hover:opacity-90 text-white py-3 rounded-md font-medium transition-colors duration-200 ${
                 isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >
@@ -447,7 +447,7 @@ export default function ContactSection() {
           <div className="space-y-6">
             {/* Email */}
             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">✉️</div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">✉️</div>
               <div>
                 <h4 className="font-semibold text-base-content">Email Us</h4>
                 <p className="text-base-content/70 text-sm">info@theomnixlabs.com</p>
@@ -456,7 +456,7 @@ export default function ContactSection() {
 
             {/* Call */}
             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">📞</div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">📞</div>
               <div>
                 <h4 className="font-semibold text-base-content">Call Us</h4>
                 <p className="text-base-content/70 text-sm"> (+234)8062690220</p>
@@ -465,7 +465,7 @@ export default function ContactSection() {
 
             {/* Visit */}
             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">📍</div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">📍</div>
               <div>
                 <h4 className="font-semibold text-base-content">Visit Us</h4>
                 <p className="text-base-content/70 text-sm">Bamisoro Raheem T-junction, Epe Lagos State Nigeria</p>
@@ -474,7 +474,7 @@ export default function ContactSection() {
 
             {/* Business Hours */}
             <div className="border border-base-300 rounded-xl p-6 shadow-sm bg-base-200 flex items-start gap-4 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-xl">⏰</div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent text-xl">⏰</div>
               <div>
                 <h4 className="font-semibold text-base-content">Business Hours</h4>
                 <p className="text-base-content/70 text-sm">Mon–Fri: 9AM–6PM PST</p>

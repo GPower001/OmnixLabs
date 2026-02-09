@@ -49,14 +49,21 @@ export default function Insights() {
             className="text-5xl font-bold mb-4 text-base-content"
             variants={fadeInUp}
           >
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">
               Insights
             </span>
           </motion.h1>
+          <motion.p
+            className="text-lg text-base-content/80 max-w-2xl mx-auto leading-relaxed"
+            variants={fadeInUp}
+          >
+            Stay ahead with expert perspectives on technology, innovation, and 
+            digital transformation shaping the future of business.
+          </motion.p>
         </motion.section>
 
         {/* ===== Cards Section ===== */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
           {insights.map((item, index) => (
             <motion.div
               key={index}

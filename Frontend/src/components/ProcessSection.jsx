@@ -16,7 +16,7 @@ const ProcessSection = () => {
             key={index}
             className="flex flex-col items-center text-center px-4"
           >
-            <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-[#0d8ab8] text-white text-lg sm:text-xl font-bold mb-4">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-700 to-cyan-400 text-white text-lg sm:text-xl font-bold mb-4">
               {step.number}
             </div>
             <h3 className="text-lg sm:text-xl font-bold mb-2">{step.title}</h3>

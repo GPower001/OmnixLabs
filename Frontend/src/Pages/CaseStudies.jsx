@@ -38,7 +38,7 @@
 //             variants={fadeInUp}
 //           >
 //             Case{" "}
-//             <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+//             <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">
 //               Studies
 //             </span>
 //           </motion.h1>
@@ -157,7 +157,7 @@ export default function CaseStudies() {
             variants={fadeInUp}
           >
             Case{" "}
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">
               Studies
             </span>
           </motion.h1>

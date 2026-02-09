@@ -47,9 +47,9 @@ export default function Footer() {
           <h2 className="font-bold text-lg mb-3 text-base-content">Connect</h2>
           <div className="flex space-x-3 mb-5">
             {[
-              { icon: <FaInstagram />, color: "from-pink-500 to-orange-500", link: "https://www.instagram.com" },
+              { icon: <FaInstagram />, color: "from-pink-500 to-orange-500", link: "https://www.instagram.com/theomnixlabs/" },
               { icon: <FaLinkedinIn />, color: "from-blue-600 to-blue-400", link: "https://www.linkedin.com/company/omnix-labs/?viewAsMember=true" },
-              { icon: <FaTiktok />, color: "from-gray-800 to-pink-500", link: "https://www.tiktok.com" },
+              { icon: <FaTiktok />, color: "from-gray-800 to-pink-500", link: "https://www.tiktok.com/@theomnixlabs?lang=en" },
               { icon: <FaFacebookF />, color: "from-blue-700 to-blue-500", link: "https://www.facebook.com/share/1Aa5w3q7ux/" },
             ].map((item, i) => (
               <a

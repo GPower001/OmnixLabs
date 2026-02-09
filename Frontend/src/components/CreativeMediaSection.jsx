@@ -26,8 +26,8 @@ const CreativeMediaSection = () => {
             "Visual Identity",
             "Brand Strategy",
           ]}
-          gradientFrom="from-indigo-500"
-          gradientTo="to-purple-600"
+          gradientFrom="from-blue-700"
+          gradientTo="to-cyan-400"
           icon={<Code2 className="w-7 h-7" />}
         />
 
@@ -40,8 +40,8 @@ const CreativeMediaSection = () => {
             "Print Design",
             "Digital Assets",
           ]}
-          gradientFrom="from-purple-500"
-          gradientTo="to-indigo-600"
+          gradientFrom="from-blue-700"
+          gradientTo="to-cyan-400"
           icon={<Smartphone className="w-7 h-7" />}
         />
 
@@ -54,8 +54,8 @@ const CreativeMediaSection = () => {
             "2D/3D Animation",
             "Video Editing",
           ]}
-          gradientFrom="from-violet-500"
-          gradientTo="to-blue-600"
+          gradientFrom="from-blue-700"
+          gradientTo="to-cyan-400"
           icon={<Server className="w-7 h-7" />}
         />
       </div>

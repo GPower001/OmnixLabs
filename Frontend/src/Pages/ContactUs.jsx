@@ -30,7 +30,7 @@ const ContactUs = () => {
             variants={fadeInUp}
           >
             Contact{" "}
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent">
               Us
             </span>
           </motion.h1>

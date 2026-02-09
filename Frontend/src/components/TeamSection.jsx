@@ -46,10 +46,16 @@ const TeamSection = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 500 500"
-                    className="absolute bottom-0 w-72 h-64 text-purple-500"
+                    className="absolute bottom-0 w-72 h-64"
                   >
+                    <defs>
+                      <linearGradient id={`gradient-${idx}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style={{ stopColor: '#1d4ed8', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#22d3ee', stopOpacity: 1 }} />
+                      </linearGradient>
+                    </defs>
                     <path
-                      fill="currentColor"
+                      fill={`url(#gradient-${idx})`}
                       d="M441,312.5Q433,375,382.5,416Q332,457,262.5,456.5Q193,456,133,417.5Q73,379,61.5,312.5Q50,246,68,180.5Q86,115,141.5,77.5Q197,40,263,43Q329,46,385,78.5Q441,111,447.5,178.5Q454,246,441,312.5Z"
                     />
                   </svg>
@@ -69,7 +75,7 @@ const TeamSection = () => {
                 </div>
 
                 {/* Role */}
-                <div className="text-purple-600 dark:text-purple-400 font-semibold text-sm tracking-wide uppercase mt-1">
+                <div className="bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent font-semibold text-sm tracking-wide uppercase mt-1">
                   {member.role}
                 </div>
 
@@ -79,7 +85,7 @@ const TeamSection = () => {
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-700 to-cyan-400 hover:opacity-90 transition-opacity duration-300"
                   >
                     <FaLinkedinIn className="w-5 h-5 text-white" />
                   </a>
@@ -132,4 +138,4 @@ const TeamSection = () => {
   );
 };
 
-export default TeamSection;
+export default TeamSection; 
